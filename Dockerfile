@@ -19,4 +19,4 @@ RUN apt-get -qq update && \
 RUN echo ". /opt/miniconda3/etc/profile.d/conda.sh" >> ~/.profile && \
     echo "conda activate" >> ~/.profile
 
-CMD ["/bin/bash", "--login"]
+CMD ["/bin/bash", "-l"]
