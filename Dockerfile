@@ -11,7 +11,7 @@ RUN apt-get -qq update && \
 	rm ~/miniconda.sh && \
 	conda update conda -y && \
 	conda update python -y && \
-	conda update -all -y && \
+	conda update --all -y && \
 	conda clean -a -y && \
 	apt-get -qq -y remove curl bzip2 && \
 	apt-get -qq -y autoremove && \
