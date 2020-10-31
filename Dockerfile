@@ -9,8 +9,10 @@ RUN apt-get -qq update && \
 	curl -sSL https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -o ~/miniconda.sh && \
 	bash ~/miniconda.sh -bfp /opt/miniconda3 && \
 	rm ~/miniconda.sh && \
-	conda update conda && \
-	conda clean --all --yes && \
+	conda update conda -y && \
+	conda update python -y && \
+	conda update -all -y && \
+	conda clean -a -y && \
 	apt-get -qq -y remove curl bzip2 && \
 	apt-get -qq -y autoremove && \
 	apt-get -qq autoclean && \
