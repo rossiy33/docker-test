@@ -2,7 +2,7 @@
 
 ## run
 ```bash
-docker run --name=conda-base ppp8docker/conda-base
+docker run -it ppp8docker/conda-base
 ```
 
 debianに最新miniconda3を入れて、updateをしただけのやつ
